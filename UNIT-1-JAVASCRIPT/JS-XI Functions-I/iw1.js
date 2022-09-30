@@ -29,3 +29,31 @@ else
   console.log("it is not prime");
 }
 
+//2nd way
+
+// Problem 1: Create a function to check if a number is Prime or Not
+
+function checkIsPrime(num){
+  let factors=0;
+  for(let i=1;i<=num;i++)
+    {
+      if(num%i==0){
+        factors++;
+      }
+    }
+  if(factors==2){
+    return true;
+  }
+  else{
+    return false;
+  }
+  }
+let x=checkIsPrime()
+
+if(x==true){
+  console.log(" 7 is Prime")
+}
+else{
+  
+  console.log(" 7 is Not Prime")
+}
